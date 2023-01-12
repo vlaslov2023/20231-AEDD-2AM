@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class LectorV2 {
 	private static Scanner lector = new Scanner(System.in);
 	@SuppressWarnings("resource")
-	protected static int leerEntero(String mensaje) {
+	public static int leerEntero(String mensaje) {
 		Boolean flagEntero = true;
 		int entero = 0;
 		do {
@@ -21,7 +21,7 @@ public class LectorV2 {
 	}
 
 	@SuppressWarnings("resource")
-	protected static double leerReal(String mensaje) {
+	public static double leerReal(String mensaje) {
 		Boolean flagReal = true;
 		double real = 0;
 		do {
@@ -39,17 +39,17 @@ public class LectorV2 {
 	}
 
 	@SuppressWarnings("resource")
-	protected static String LeerTexto(String mensaje) {
+	public static String LeerTexto(String mensaje) {
 		System.out.print(mensaje);
 		String texto = lector.nextLine();
 		return texto;
 	}
 
-	protected static void escribir(String texto) {
+	public static void escribir(String texto) {
 		System.out.print(texto);
 	}
 
-	protected static void escribirLinea(String texto) {
+	public static void escribirLinea(String texto) {
 		System.out.println(texto);
 	}
 }
